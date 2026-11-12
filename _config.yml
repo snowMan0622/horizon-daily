@@ -1,0 +1,23 @@
+theme: jekyll-theme-cayman
+title: Horizon 每日速递
+description: 每天一份 AI 精选的中文科技与工具简报
+baseurl: "/horizon-daily" # the subpath of your site, e.g. /blog
+url: "https://snowman0622.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+future: true # Allow future posts to be published
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+exclude:
+  - ".github"
+  - "node_modules"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
