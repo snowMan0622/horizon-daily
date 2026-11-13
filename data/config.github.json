@@ -54,7 +54,21 @@
       { "name": "小众软件", "url": "https://www.appinn.com/feed/", "enabled": true, "category": "software", "profile": "tech-news" },
       { "name": "Solidot 奇客", "url": "https://www.solidot.org/index.rss", "enabled": true, "category": "tech-news", "profile": "tech-news" },
       { "name": "IT之家", "url": "https://www.ithome.com/rss/", "enabled": true, "category": "software", "profile": "tech-news" },
-      { "name": "Product Hunt", "url": "https://www.producthunt.com/feed", "enabled": true, "category": "ai-tools", "profile": "tech-news" }
+      { "name": "Product Hunt", "url": "https://www.producthunt.com/feed", "enabled": true, "category": "ai-tools", "profile": "tech-news" },
+      { "name": "MacStories", "url": "https://www.macstories.net/feed/", "enabled": true, "category": "apple-apps", "profile": "tech-news" },
+      { "name": "Product Hunt — Mac", "url": "https://www.producthunt.com/feed?category=mac", "enabled": true, "category": "product-discovery", "profile": "tech-news" },
+      { "name": "Product Hunt — Developer Tools", "url": "https://www.producthunt.com/feed?category=developer-tools", "enabled": true, "category": "product-discovery", "profile": "tech-news" },
+      { "name": "Product Hunt — Chrome Extensions", "url": "https://www.producthunt.com/feed?category=chrome-extensions", "enabled": true, "category": "product-discovery", "profile": "tech-news" },
+      { "name": "Product Hunt — Design Tools (optional)", "url": "https://www.producthunt.com/feed?category=design-tools", "enabled": false, "category": "design-inspiration", "profile": "tech-news" },
+      { "name": "Show HN — New Projects", "url": "https://hnrss.org/show?points=30", "enabled": false, "category": "indie-projects", "profile": "tech-news" },
+      { "name": "HelloGitHub 月刊", "url": "https://hellogithub.com/rss", "enabled": true, "category": "open-source-curated", "profile": "tech-news" },
+      { "name": "Sidebar — Design Links", "url": "https://sidebar.io/feed.xml", "enabled": true, "category": "design-inspiration", "profile": "tech-news" },
+      { "name": "Codrops — Creative UI", "url": "https://tympanus.net/codrops/rss", "enabled": false, "category": "ui-interactions", "profile": "tech-news" },
+      { "name": "Smashing Magazine", "url": "https://www.smashingmagazine.com/feed/", "enabled": true, "category": "ui-interactions", "profile": "tech-news" },
+      { "name": "Armin Ronacher", "url": "https://lucumr.pocoo.org/feed.atom", "enabled": true, "category": "ai-builder", "profile": "tech-blog" },
+      { "name": "MCP Official Blog", "url": "https://blog.modelcontextprotocol.io/index.xml", "enabled": true, "category": "ai-agent", "profile": "tech-news" },
+      { "name": "n8n Blog", "url": "https://blog.n8n.io/rss/", "enabled": true, "category": "automation", "profile": "tech-blog" },
+      { "name": "Ben's Bites", "url": "https://www.bensbites.com/feed", "enabled": false, "category": "ai-builder", "profile": "tech-news" }
     ],
     "reddit": {
       "enabled": true,
@@ -62,7 +76,10 @@
         { "subreddit": "MachineLearning", "enabled": true, "sort": "hot", "time_filter": "day", "fetch_limit": 12, "min_score": 60, "profile": "tech-news" },
         { "subreddit": "LocalLLaMA", "enabled": true, "sort": "hot", "time_filter": "day", "fetch_limit": 12, "min_score": 60, "profile": "tech-news" },
         { "subreddit": "SideProject", "enabled": true, "sort": "top", "time_filter": "day", "fetch_limit": 10, "min_score": 30, "profile": "tech-news" },
-        { "subreddit": "selfhosted", "enabled": true, "sort": "hot", "time_filter": "day", "fetch_limit": 10, "min_score": 100, "profile": "tech-news" }
+        { "subreddit": "selfhosted", "enabled": true, "sort": "hot", "time_filter": "day", "fetch_limit": 10, "min_score": 100, "profile": "tech-news" },
+        { "subreddit": "macapps", "enabled": false, "sort": "top", "time_filter": "day", "fetch_limit": 20, "min_score": 10, "category": "mac-apps", "profile": "tech-news" },
+        { "subreddit": "iosapps", "enabled": false, "sort": "top", "time_filter": "day", "fetch_limit": 15, "min_score": 10, "category": "ios-apps", "profile": "tech-news" },
+        { "subreddit": "InternetIsBeautiful", "enabled": true, "sort": "top", "time_filter": "day", "fetch_limit": 15, "min_score": 30, "category": "creative-web", "profile": "tech-news" }
       ],
       "users": [],
       "fetch_comments": 5
@@ -70,13 +87,30 @@
     "telegram": {
       "enabled": true,
       "channels": [
-        { "channel": "zaihuapd", "enabled": true, "fetch_limit": 20, "profile": "tech-news" }
+        { "channel": "zaihuapd", "enabled": true, "fetch_limit": 20, "profile": "tech-news" },
+        { "channel": "NewlearnerChannel", "enabled": true, "fetch_limit": 15, "category": "apple-apps-cn", "profile": "tech-news" }
       ]
     },
-    "github": [],
+    "github": [
+      { "type": "repo_releases", "owner": "steipete", "repo": "CodexBar", "enabled": true, "category": "mac-open-source", "profile": "tech-news" },
+      { "type": "repo_releases", "owner": "ejbills", "repo": "DockDoor", "enabled": true, "category": "mac-open-source", "profile": "tech-news" },
+      { "type": "repo_releases", "owner": "jordanbaird", "repo": "Ice", "enabled": true, "category": "mac-open-source", "profile": "tech-news" },
+      { "type": "repo_releases", "owner": "p0deje", "repo": "Maccy", "enabled": true, "category": "mac-open-source", "profile": "tech-news" },
+      { "type": "repo_releases", "owner": "swiftbar", "repo": "SwiftBar", "enabled": true, "category": "mac-open-source", "profile": "tech-news" },
+      { "type": "repo_releases", "owner": "openclaw", "repo": "Peekaboo", "enabled": true, "category": "ai-agent", "profile": "tech-news" }
+    ],
     "twitter": { "enabled": false },
     "openbb": { "enabled": false },
-    "ossinsight": { "enabled": false },
+    "ossinsight": {
+      "enabled": true,
+      "period": "past_24_hours",
+      "languages": ["Swift", "TypeScript", "JavaScript"],
+      "keywords": [],
+      "min_stars": 20,
+      "max_items": 12,
+      "category": "oss-trending",
+      "profile": "tech-news"
+    },
     "gdelt": { "enabled": false },
     "google_news": { "enabled": false }
   },
